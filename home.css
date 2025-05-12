@@ -1,0 +1,113 @@
+#home {
+  font-family: Audiowide;
+}
+
+.landing {
+  background-color: #002f48;
+  border-radius: 10px;
+  background-image: url(images/logo\ couleur.png);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 10%;
+  margin-top: 7%;
+}
+.container-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  max-width: 100%;
+}
+.title-landing {
+  font-size: 6rem;
+  margin-top: -10%;
+  margin-bottom: 3%;
+  background: radial-gradient(
+    circle,
+    rgba(235, 135, 58, 1) 22%,
+    rgba(235, 206, 33, 1) 56%,
+    rgba(235, 152, 8, 1) 86%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+.subtitle-landing {
+  font-size: 3rem;
+  text-shadow: 2px 10px 3px rgba(0, 0, 0, 0.4);
+}
+.p-landing {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7);
+}
+.button-index {
+  font-family: Audiowide;
+  font-size: 1.2rem;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  margin-top: 20px;
+  padding: 1.5%;
+  border-radius: 20px;
+  border: solid 2px black;
+  background: linear-gradient(
+    305deg,
+    hsl(0deg 69% 49%) 0%,
+    hsl(7deg 72% 49%) 3%,
+    hsl(12deg 76% 50%) 10%,
+    hsl(17deg 80% 50%) 17%,
+    hsl(22deg 85% 50%) 25%,
+    hsl(26deg 91% 49%) 33%,
+    hsl(31deg 100% 47%) 42%,
+    hsl(32deg 91% 50%) 50%,
+    hsl(33deg 92% 53%) 60%,
+    hsl(35deg 93% 55%) 69%,
+    hsl(36deg 94% 58%) 79%,
+    hsl(38deg 96% 60%) 89%,
+    hsl(40deg 97% 63%) 100%
+  );
+}
+
+.button-index:hover {
+  background: linear-gradient(
+    153deg,
+    hsl(0deg 69% 49%) 0%,
+    hsl(7deg 72% 49%) 3%,
+    hsl(12deg 76% 50%) 10%,
+    hsl(17deg 80% 50%) 17%,
+    hsl(22deg 85% 50%) 25%,
+    hsl(26deg 91% 49%) 33%,
+    hsl(31deg 100% 47%) 42%,
+    hsl(32deg 91% 50%) 50%,
+    hsl(33deg 92% 53%) 60%,
+    hsl(35deg 93% 55%) 69%,
+    hsl(36deg 94% 58%) 79%,
+    hsl(38deg 96% 60%) 89%,
+    hsl(40deg 97% 63%) 100%
+  );
+  color: white;
+  border: solid black 2px;
+  box-shadow: 7px 7px 0px black;
+}
+
+.button-index:active {
+  background: #fcbd43;
+  box-shadow: none;
+  transform: translateY(5px);
+}

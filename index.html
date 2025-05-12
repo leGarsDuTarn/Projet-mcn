@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Le Moto Club de Naves, passionné de motocross, vous invite à découvrir son histoire, son circuit, et ses événements. Rejoignez notre communauté de pilotes."
+    />
+    <meta
+      name="keywords"
+      content="motocross, club de motocross, Naves, Castres, sport, compétition, circuit, passion, moto, club, entraînement"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Moto Club Naves</title>
+  </head>
+  <body>
+    <header>
+      <section id="landing">
+        <!--navigation interne du site via onglet-->
+        <div class="title-landing">
+          <h1>Moto Club Naves</h1>
+        </div>
+        <nav class="navbar">
+          <div class="nav-links">
+            <ul>
+              <li><a href="#landing">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#track">Le circuit</a></li>
+              <li><a href="#gallery">Galerie</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  class="img-link-nav"
+                  href="https://www.facebook.com/p/MCNC-MotoClub-Naves-Castres-100082078692790/"
+                  target="_blank"
+                  ><img
+                    src="images/Logo Reseaux Sociaux/facebook noir.png"
+                    alt="Suivez-nous sur Facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="img-link-nav"
+                  href="https://www.instagram.com/motoclub_naves81/"
+                  target="_blank"
+                  ><img
+                    src="images/Logo Reseaux Sociaux/instagram noir.png"
+                    alt="Suivez-nous sur Instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="menu-hamburger"
+            src="images/img-home/icon-menu.png"
+            alt="boutton menu"
+          />
+        </nav>
+      </section>
+    </header>
+
+    <section id="about">
+      <div class="container-about">
+        <h2 class="title-about">L'aventure commence ici ....</h2>
+        <p class="history-about">
+          Depuis 1979, le Moto Club de Naves est le rendez-vous incontournable
+          des passionnés de motocross. Situé à deux pas de Castres, notre
+          circuit offre aux pilotes de tous niveaux un cadre dynamique pour
+          s’entraîner, se dépasser et vivre pleinement leur passion, dans une
+          ambiance familiale et conviviale.
+        </p>
+        <p class="adventure-about">
+          Pour pouvoir prendre part à l'aventure avec nous,
+          <strong><span class="underline">une licence FFM</span></strong>
+          est obligatoire. Si vous êtes déjà licencié FFM n'hésitez pas à
+          vérifiez notre calendrier pour préparez votre visite.
+        </p>
+        <a
+          href="https://www.facebook.com/p/MCNC-MotoClub-Naves-Castres-100082078692790/"
+          target="_blank"
+          class="animated-link"
+          >Voir le calendrier</a
+        >
+        <p class="ready-about">Pas encore licencié ? Suivez le guide</p>
+        <a
+          href="https://licencie.ffmoto.net/inscription.html"
+          target="_blank"
+          class="animated-link"
+          >Prendre une licence</a
+        >
+      </div>
+    </section>
+
+    <section id="track">
+      <!-- ici implémentation de la video en arrière plan du circuit avec les attribut autoplay, silencieuse et boucle -->
+      <div class="video-background typing-gsap-top">
+        <video autoplay muted loop id="background-video">
+          <!-- Mise en place d'autres sources pour maximiser la compatibilité avec les navigateurs -->
+          <source src="images/video-track/track-video.MP4" type="video/mp4" />
+          <source src="images/video-track/track-video.webm" type="video/webm" />
+          <source src="images/video-track/track-video.ogv" type="video/ogg" />
+          <!-- Message au cas où la vidéo ne peut pas être lue -->
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+      <div class="container-track typing-gsap-left">
+        <h2 class="title-track">Le circuit</h2>
+        <p class="p-track">
+          Le circuit de motocross du moto club de Naves est un terrain naturel
+          offrant une expérience palpitante. Entre sauts, virages serrés, lignes
+          droites et sections techniques, il met au défi les pilotes. Adapté aux
+          conditions météo, il combine terre, poussière et boue, exigeant des
+          ajustements constants de technique et de stratégie. Avec ses
+          configurations variées. Il est idéal pour les compétitions ou les
+          entraînements.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="slide-1"
+            src="images/images-slider-home/img1.jpg"
+            alt="portrait d'un courreur"
+          />
+          <img
+            id="slide-2"
+            src="images/images-slider-home/img2.png"
+            alt="portrait d'un courreur pendant un virage"
+          />
+          <img
+            id="slide-3"
+            src="images/images-slider-home/img3.jpg"
+            alt="photo de dos d'un courreur"
+          />
+          <img
+            id="slide-4"
+            src="images/images-slider-home/img4.png"
+            alt="photo d'un courreur dans un sous-bois"
+          />
+          <img
+            id="slide-5"
+            src="images/images-slider-home/img5.png"
+            alt="photo du circuit prise par drone"
+          />
+          <img
+            id="slide-6"
+            src="images/images-slider-home/img6.png"
+            alt="photo de deux courreurs dans un virage"
+          />
+          <img
+            id="slide-7"
+            src="images/images-slider-home/img7.png"
+            alt="photo d'un courreur pendant un saut"
+          />
+          <img
+            id="slide-8"
+            src="images/images-slider-home/img8.png"
+            alt="photo d'un deuxième courreur pendant un saut en longueur"
+          />
+        </div>
+        <div class="slider-nav">
+          <button data-slide="slide-1"></button>
+          <button data-slide="slide-2"></button>
+          <button data-slide="slide-3"></button>
+          <button data-slide="slide-4"></button>
+          <button data-slide="slide-5"></button>
+          <button data-slide="slide-6"></button>
+          <button data-slide="slide-7"></button>
+          <button data-slide="slide-8"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-title">
+        <h2>Une question ? Contactez-nous !</h2>
+        <p>
+          Vous souhaitez obtenir des informations sur le Moto Club de Naves ou
+          poser une question ? Nous sommes là pour vous répondre ! Vous pouvez
+          nous joindre par téléphone, nous rendre visite directement à notre
+          adresse, ou nous écrire via nos réseaux sociaux.
+        </p>
+        <!-- Section des portraits des responsables du club -->
+
+        <div class="contact-photo">
+          <figure class="contact-responsable-mcn">
+            <img
+              class="portraiture"
+              src="images/image-contact/img1.JPG"
+              alt="Portrait du président du club"
+            />
+            <figcaption>
+              <strong>Kévin</strong><br />
+              Président
+            </figcaption>
+          </figure>
+          <figure class="contact-responsable-mcn">
+            <img
+              class="portraiture"
+              src="images/image-contact/img2.png"
+              alt="Portrait de la responsable communication du club"
+            />
+            <figcaption>
+              <strong>Prescillia</strong><br />
+              Responsable <br />
+              communication
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <!-- Ajout d'une nouvelle division pour organiser les colonnes -->
+        <div class="contact-content">
+          <div class="contact-info gsap-fade-effect">
+            <h3>Coordonnées</h3>
+            <address>
+              <p>
+                <strong>Adresse :</strong> Chemin des Cassaes, 81710 Naves,
+                France
+              </p>
+              <p>
+                <strong>Téléphone : </strong
+                ><a href="tel:+0659286104"> 06 59 28 61 04</a>
+              </p>
+              <p><strong>Mail :</strong> motoclubnaves@gmail.com</p>
+            </address>
+
+            <div class="social-media-link-contact">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/p/MCNC-MotoClub-Naves-Castres-100082078692790/"
+                    target="_blank"
+                    ><img
+                      src="images/Logo Reseaux Sociaux/facebookcool.png"
+                      alt="logo facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/motoclub_naves81/"
+                    target="_blank"
+                    ><img
+                      src="images/Logo Reseaux Sociaux/instacool.png"
+                      alt="logo instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="map-container gsap-fade-effect">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.827213519438!2d2.2164966770985424!3d43.56848337110635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae13d839d15b75%3A0x3fa1f1ee1fdf423a!2sChem.%20des%20Cassaes%2C%2081710%20Naves!5e0!3m2!1sfr!2sfr!4v1733470922634!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>&copy; 2025 Moto Club de Naves. Tous droits réservé.</p>
+          <ul class="social-media-link">
+            <li>
+              <a
+                href="https://www.facebook.com/p/MCNC-MotoClub-Naves-Castres-100082078692790/"
+                target="_blank"
+                ><img
+                  src="images/Logo Reseaux Sociaux/facebookcool.png"
+                  alt="logo facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/motoclub_naves81/"
+                target="_blank"
+                ><img
+                  src="images/Logo Reseaux Sociaux/instacool.png"
+                  alt="logo instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer - section basse -->
+        <div class="footer-bottom">
+          <p>Site réalisé par <strong>leGarsDuTarn</strong></p>
+          <img
+            src="images/Logo Developpeur/logoDev.jpeg"
+            alt="logo du créateur du site"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

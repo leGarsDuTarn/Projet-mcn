@@ -1,0 +1,1593 @@
+/* Mode Responsive Portrait pour Téléphone mobile Petit à Grand type Iphone SE à Iphone 14 Pro Max*/ /* OK */
+@media (max-width: 575px) and (orientation: portrait) {
+  .navbar {
+    padding: 25px; /* Ajoute du padding global */
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    margin: -15px;
+    transform: translateY(
+      -50%
+    ); /* centre l'img Hamburger en Y au niveau du bandeau. */
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.699); /* fond semi transparent */
+    backdrop-filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1.1rem;
+  }
+  .navbar li a img {
+    margin: -20px;
+    transform: translateX(50%); /* Centrage des icones Facebook et Insta */
+  }
+  .title-landing h1 {
+    font-size: 2.5rem;
+    margin-top: 80px;
+  }
+  /* Cache les enfants (liens) mais pas le fond */
+  .nav-links ul {
+    display: none;
+    display: flex; /* Assure que l'élément est visible */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px 0;
+    font-size: 1.3rem;
+  }
+
+  /* #about*/ /* OK */
+  #about {
+    background-size: 300%;
+  }
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    padding: 8%;
+  }
+  .history-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-top: -8%;
+  }
+  .adventure-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .ready-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .container-about a {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    padding: 6px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    display: grid;
+    grid-template-rows: auto auto; /* Deux lignes : une pour la vidéo, une pour le texte */
+    grid-template-columns: 1fr; /* Une seule colonne */
+    justify-items: center; /* Centre les éléments horizontalement */
+  }
+  .video-background {
+    grid-column: 1; /* Unique colonne */
+    grid-row: 1; /* Première ligne */
+  }
+  .container-track {
+    grid-column: 1; /* Unique colonne */
+    grid-row: 2; /* Deuxième ligne */
+  }
+  #background-video {
+    width: 50%;
+    height: auto;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: none;
+  }
+
+  /*  #contact */ /* OK */
+  .contact-title {
+    width: 90%;
+    margin-top: 2%;
+  }
+  .contact-title h2 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .contact-photo {
+    display: none;
+  }
+  .contact-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 10px;
+    padding: 1%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    margin-top: 5%;
+    width: 60%;
+    min-height: 150px;
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 25vh;
+  }
+  .footer-left p {
+    font-size: 0.7rem;
+  }
+  .social-media-link img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 1.5%;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode Responsive Landscape pour Téléphone mobile Petit type Iphone SE */
+@media (max-width: 759px) and (orientation: landscape) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre les éléments */
+    padding: 20px; /* Ajoute du padding global */
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background: rgba(245, 245, 245, 0.083);
+    backdrop-filter: blur(10px);
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    margin-top: -18px;
+    transform: translateY(
+      -50%
+    ); /* centre l'img Hamburger en Y au niveau du bandeau. */
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    width: 30px; /* Taille de l'img Hamburger */
+    height: 30px; /* Taille de l'img Hamburger */
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.699); /* fond semi transparent */
+    backdrop-filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1.1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px;
+    transform: translateX(50%); /* Centrage des icones Facebook et Insta */
+  }
+  .title-landing h1 {
+    font-size: 2.5rem;
+    margin-top: 5px;
+  }
+  /* Cache les enfants (liens) mais pas le fond */
+  .nav-links ul {
+    display: none;
+    display: flex; /* Assure que l'élément est visible */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px 0;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding: 2%;
+    margin-top: 7%;
+  }
+  .history-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-top: -5%;
+  }
+  .adventure-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .ready-about {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .container-about a {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    padding: 8px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    grid-template-rows: auto; /* Une seule ligne qui s'adapte au contenu */
+    gap: 10px; /* Espacement entre les éléments */
+  }
+  .video-background {
+    grid-column: 2; /* Vidéo dans la deuxième colonne */
+    grid-row: 1; /* Première ligne */
+  }
+  .container-track {
+    grid-column: 1; /* Texte dans la première colonne */
+    grid-row: 1; /* Première ligne */
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  #background-video {
+    width: 50%;
+    height: auto;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+  }
+  button {
+    display: none;
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 2%;
+  }
+  .contact-title h2 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .contact-photo {
+    display: none;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 0%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 60%;
+    min-height: 150px;
+    transform: translateY(-2%);
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 60vh;
+  }
+  .footer-left p {
+    font-size: 0.7rem;
+  }
+  .social-media-link img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 3%;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode Responsive Landscape pour Téléphone mobile Moyen à Grand type Iphone 14 Pro MAX */ /* OK */
+@media (min-width: 759px) and (max-width: 932px) and (orientation: landscape) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre les éléments */
+    padding: 25px; /* Ajoute du padding global */
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background: rgba(245, 245, 245, 0.083);
+    backdrop-filter: blur(10px);
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    margin-top: -15px;
+    transform: translateY(
+      -50%
+    ); /* centre l'img Hamburger en Y au niveau du bandeau. */
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    width: 30px; /* Taille de l'img Hamburger */
+    height: 30px; /* Taille de l'img Hamburger */
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.699); /* fond semi transparent */
+    backdrop-filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1.1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px;
+    transform: translateX(50%); /* Centrage des icones Facebook et Insta */
+  }
+  .navbar li img {
+    margin: 0;
+  }
+  .title-landing h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  /* Cache les enfants (liens) mais pas le fond */
+  .nav-links ul {
+    display: none;
+    display: flex; /* Assure que l'élément est visible */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px 0;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding: 2%;
+    margin-top: 7%;
+  }
+  .history-about {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-top: -5%;
+  }
+  .adventure-about {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .ready-about {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .container-about a {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    grid-template-rows: auto; /* Une seule ligne qui s'adapte au contenu */
+    gap: 10px; /* Espacement entre les éléments */
+  }
+  .video-background {
+    grid-column: 2; /* Vidéo dans la deuxième colonne */
+    grid-row: 1; /* Première ligne */
+  }
+  .container-track {
+    grid-column: 1; /* Texte dans la première colonne */
+    grid-row: 1; /* Première ligne */
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  #background-video {
+    width: 45%;
+    height: auto;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: none;
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 2%;
+  }
+  .contact-title h2 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .contact-photo {
+    display: none;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 0%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 60%;
+    min-height: 150px;
+    transform: translateY(-2%);
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 60vh;
+  }
+  .footer-left p {
+    font-size: 0.7rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 3%;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode Responsive Portrait pour les tablettes */ /* OK */
+@media (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+  .navbar {
+    padding: 25px; /* Ajoute du padding global */
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    margin: -15px;
+    transform: translateY(
+      -50%
+    ); /* centre l'img Hamburger en Y au niveau du bandeau. */
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.699); /* fond semi transparent */
+    backdrop-filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1.5rem;
+  }
+  .navbar li a img {
+    margin: -20px;
+    transform: translateX(50%); /* Centrage des icones Facebook et Insta */
+  }
+  .title-landing h1 {
+    font-size: 3.5rem;
+    margin-top: 20%;
+  }
+  /* Cache les enfants (liens) mais pas le fond */
+  .nav-links ul {
+    display: none;
+    display: flex; /* Assure que l'élément est visible */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px 0;
+    font-size: 1.3rem;
+  }
+
+  /* #about*/ /* OK */
+  #about {
+    background-size: 200%;
+  }
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 8%;
+  }
+  .history-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: -8%;
+  }
+  .adventure-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .ready-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .container-about a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    display: grid;
+    grid-template-rows: auto auto; /* Deux lignes : une pour la vidéo, une pour le texte */
+    grid-template-columns: 1fr; /* Une seule colonne */
+    justify-items: center; /* Centre les éléments horizontalement */
+  }
+  .video-background {
+    grid-column: 1; /* Unique colonne */
+    grid-row: 1; /* Première ligne */
+  }
+  .container-track {
+    grid-column: 1; /* Unique colonne */
+    grid-row: 2; /* Deuxième ligne */
+  }
+  #background-video {
+    width: 50%;
+    height: auto;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  #gallery {
+    width: 100vw;
+    height: 100vh;
+  }
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: none;
+  }
+
+  /*  #contact */ /* Ok */
+  .contact-title {
+    width: 90%;
+    margin-top: 2%;
+  }
+  .contact-title h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .portraiture {
+    width: 50px;
+    height: 50px;
+  }
+  .contact-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 2%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    margin-top: 5%;
+    width: 80%;
+    min-height: 250px;
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 20vh;
+  }
+  .footer-left p {
+    font-size: 0.8rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 1.5%;
+  }
+  .footer-bottom p {
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode Responsive Landscape pour les tablettes */ /* OK */
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
+  .navbar {
+    display: block;
+    margin-top: -18px;
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    padding: 35px; /* Ajoute du padding global */
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+  }
+  .nav-links {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px; /* Centre les images en Y sur la navbar */
+    width: 20px;
+    height: 20px;
+  }
+  .title-landing h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: 5%;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 5%;
+  }
+  .history-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: -5%;
+  }
+  .adventure-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .ready-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .container-about a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    grid-template-rows: 1fr; /* Une seule ligne pour aligner la vidéo et le texte horizontalement */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour que la vidéo et le texte soient côte à côte */
+    grid-template-rows: auto auto;
+  }
+  .video-background {
+    grid-column: 1fr; /* Première colonne */
+    grid-row: 1fr; /* Même ligne */
+  }
+  .container-track {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  #background-video {
+    width: 80%;
+    height: 99%;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: none; /* Attention Ipad Pro les boutons ne sont pas caché */
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 2%;
+  }
+  .contact-title h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .portraiture {
+    width: 70px;
+    height: 70px;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 0%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 80%;
+    min-height: 300px;
+    transform: translateY(-2%);
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 30vh;
+  }
+  .footer-left p {
+    font-size: 0.8rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 1.5%;
+  }
+  .footer-bottom p {
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode responsive pour petit PC portable */ /* Ok */
+@media (min-width: 1200px) and (max-width: 1365px) and (max-height: 649px) {
+  .navbar {
+    display: block;
+    margin-top: -18px;
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    padding: 35px; /* Ajoute du padding global */
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+  }
+  .nav-links {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px; /* Centre les images en Y sur la navbar */
+    width: 20px;
+    height: 20px;
+  }
+  .title-landing h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  .history-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: -80px;
+  }
+  .adventure-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .ready-about {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .container-about a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    grid-template-rows: 1fr; /* Une seule ligne pour aligner la vidéo et le texte horizontalement */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour que la vidéo et le texte soient côte à côte */
+    grid-template-rows: auto auto;
+  }
+  .video-background {
+    grid-column: 1fr; /* Première colonne */
+    grid-row: 1fr; /* Même ligne */
+  }
+  .container-track {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  #background-video {
+    width: 80%;
+    height: 99%;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: block;
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 5%;
+  }
+  .contact-title h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .portraiture {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 0%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 50%;
+    min-height: 200px;
+    transform: translateY(-2%);
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 40vh;
+  }
+  .footer-left p {
+    font-size: 0.8rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 1.5%;
+  }
+  .footer-bottom p {
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode responsive pour  PC portable moyen à grand Type Surface Pro */ /* OK */
+@media (min-width: 1366px) and (max-width: 1535px) and (min-height: 650px) {
+  .navbar {
+    display: block;
+    margin-top: -18px;
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    padding: 35px; /* Ajoute du padding global */
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+  }
+  .nav-links {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px; /* Centre les images en Y sur la navbar */
+    width: 20px;
+    height: 20px;
+  }
+  .title-landing h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .history-about {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: -80px;
+  }
+  .adventure-about {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .ready-about {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .container-about a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    grid-template-rows: 1fr; /* Une seule ligne pour aligner la vidéo et le texte horizontalement */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour que la vidéo et le texte soient côte à côte */
+    grid-template-rows: auto auto;
+  }
+  .video-background {
+    grid-column: 1fr; /* Première colonne */
+    grid-row: 1fr; /* Même ligne */
+  }
+  .container-track {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  #background-video {
+    width: 80%;
+    height: 99%;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: block;
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 5%;
+  }
+  .contact-title h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-info {
+    margin: 0 15px;
+    padding: 0%;
+  }
+  .contact-container {
+    margin-top: 1%;
+    width: 90%;
+  }
+  .social-media-link-contact img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 50%;
+    min-height: 250px;
+    transform: translateY(-2%);
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 40vh;
+  }
+  .footer-left p {
+    font-size: 0.9rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 3%;
+    margin-top: 2%;
+  }
+  .footer-bottom p {
+    font-size: 0.9rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
+
+/* Mode responsive pour PC */ /* OK */
+@media (min-width: 1536px) {
+  .navbar {
+    display: block;
+    margin-top: -18px;
+    cursor: pointer; /* Ajoute un curseur pour l'interaction */
+    padding: 35px; /* Ajoute du padding global */
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 1%;
+  }
+  .nav-links {
+    margin-left: 0;
+  }
+  .navbar li a {
+    font-size: 1rem; /* Taille de la police des liens de la navbar */
+  }
+  .navbar li a img {
+    margin: -20px; /* Centre les images en Y sur la navbar */
+    width: 20px;
+    height: 20px;
+  }
+  .title-landing h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
+  }
+  .navbar .nav-links ul li {
+    margin: 15px;
+  }
+
+  /* #about */ /* OK */
+  .container-about {
+    width: 100%;
+  }
+  .title-about {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  .history-about {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-top: -80px;
+  }
+  .adventure-about {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .ready-about {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+  .container-about a {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  /* #track */ /* OK */
+  #track {
+    grid-template-rows: 1fr; /* Une seule ligne pour aligner la vidéo et le texte horizontalement */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour que la vidéo et le texte soient côte à côte */
+    grid-template-rows: auto auto;
+  }
+  .video-background {
+    grid-column: 1fr; /* Première colonne */
+    grid-row: 1fr; /* Même ligne */
+  }
+  .container-track {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  #background-video {
+    width: 80%;
+    height: 99%;
+  }
+  .container-track {
+    width: 90%;
+  }
+  .title-track {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+  }
+  .p-track {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+  }
+
+  /* #gallery */ /* OK */
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    display: block;
+  }
+
+  /* #contact */ /* OK */
+  .contact-title {
+    width: 95%;
+    margin-top: 5%;
+  }
+  .contact-title h2 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  .contact-title p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+  .contact-info h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .contact-info p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .contact-content {
+    flex-direction: column; /* Améliore la lisibilité en mode portrait */
+    width: 100%;
+    margin: 5px;
+  }
+  .contact-container {
+    margin-bottom: 5%;
+    margin-top: 1%;
+    width: 100%;
+  }
+  .social-media-link-contact img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+  }
+  .map-container {
+    padding: 15px;
+  }
+  .map-container iframe {
+    width: 100%;
+    min-height: 150px;
+  }
+
+  /* #footer */ /* OK */
+  footer {
+    width: 100vw;
+    height: 40vh;
+  }
+  .footer-left p {
+    font-size: 1rem;
+  }
+  .social-media-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+  }
+  .footer-bottom {
+    width: 90%;
+    padding: 3%;
+    margin-top: 2%;
+  }
+  .footer-bottom p {
+    font-size: 1rem;
+    margin-bottom: 2%;
+  }
+  .footer-bottom img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
